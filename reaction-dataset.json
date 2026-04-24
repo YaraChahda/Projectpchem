@@ -1,0 +1,14 @@
+[
+  {
+    "product_smiles": "CCO",
+    "reactants_smiles": ["CC", "O"],
+    "yield": 0.8,
+    "elements": ["C", "H", "O"]
+  },
+  {
+    "product_smiles": "CC",
+    "reactants_smiles": ["C", "C"],
+    "yield": 0.9,
+    "elements": ["C", "H"]
+  }
+]
