@@ -1,26 +1,26 @@
 {
   "_metadata": {
-    "description": "Dataset de toxicité enrichi — associe chaque composé chimique (SMILES canonique) à ses informations de danger GHS. Utilisé par le programme pour calculer le score de toxicité d'une route en interrogeant chaque réactif et solvant. Sources : GHS / ECHA / PubChem / Sigma-Aldrich SDS.",
+    "description": "Enriched Dataset of toxicity — associate each chemical compound (via canonic SMILES) to its toxicity and hazard characteristics GHS.  Used by the program to calculate the toxicity/hazard score of a synthetic pathway in investigating the reagents and solvent. Sources : GHS / ECHA / PubChem / Sigma-Aldrich SDS.",
     "version": "2.0",
-    "hazard_scale": "0.0 = aucun danger connu, 1.0 = extrêmement dangereux",
-    "ghs_codes": "H2xx=physique, H3xx=santé, H4xx=environnement",
+    "hazard_scale": "0.0 = safe/hazardless, 1.0 = extremely dangerous/toxic",
+    "ghs_codes": "H2xx=physical, H3xx=health, H4xx=environement",
     "last_updated": "2026-04-27"
   },
 
   "compounds": [
 
     {
-      "name": "Éthanol",
+      "name": "Ethanol",
       "smiles": "CCO",
       "cas": "64-17-5",
       "hazard_score": 0.15,
       "ghs_pictograms": ["GHS02"],
-      "signal_word": "Attention",
+      "signal_word": "Hazardous",
       "h_statements": ["H225"],
-      "notes": "Inflammable. Solvant courant, faible toxicité systémique."
+      "notes": "Flammable. Widely used solvent courant, low toxicity."
     },
     {
-      "name": "Méthanol",
+      "name": "Methanol",
       "smiles": "CO",
       "cas": "67-56-1",
       "hazard_score": 0.55,
