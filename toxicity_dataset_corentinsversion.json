@@ -306,7 +306,7 @@
       "ghs_pictograms": ["GHS07"],
       "signal_word": "Caution",
       "h_statements": ["H302","H312","H332"],
-      "notes": "Co-oxydant pour OsO4 (dihydroxylation de Upjohn). Peu dangereux en soi."
+      "notes": "Co-oxidising agent for OsO4 (Upjohn's dihydroxylation)."
     },
     {
       "name": "Dess-Martin Periodinane (DMP)",
@@ -316,90 +316,90 @@
       "ghs_pictograms": ["GHS01","GHS05","GHS07"],
       "signal_word": "Danger",
       "h_statements": ["H271","H302","H314","H317"],
-      "notes": "Oxydant d'alcools en carbonyles. Risque d'explosion si chauffé. Corrosif. Alternative verte : TEMPO/NaOCl."
+      "notes": "Oxidising agent of alcohols in carbonyles. Can be explosive if heated. Corrosive."
     },
     {
-      "name": "DIBAL-H (hydrure de diisobutylaluminium)",
+      "name": "DIBAL-H (diisobutylaluminium hydride)",
       "smiles": "CC(C)C[Al](CC(C)C)H",
       "cas": "1191-15-7",
       "hazard_score": 0.85,
       "ghs_pictograms": ["GHS02","GHS05"],
       "signal_word": "Danger",
       "h_statements": ["H225","H250","H260","H314"],
-      "notes": "Pyrophorique. Réducteur puissant. Réagit violemment avec l'eau. Utilisé pour réduction partielle d'esters en aldéhydes."
+      "notes": "Pyrophoric. Strong reducing agent. Very reactive with water. Used for the partial reduction of esters in aldehydes."
     },
     {
-      "name": "Acide chlorhydrique (HCl)",
+      "name": "Hydrochloric acid (HCl)",
       "smiles": "Cl",
       "cas": "7647-01-0",
       "hazard_score": 0.50,
       "ghs_pictograms": ["GHS05","GHS06","GHS07"],
       "signal_word": "Danger",
       "h_statements": ["H290","H314","H335"],
-      "notes": "Acide fort corrosif. Les vapeurs sont irritantes pour les voies respiratoires."
+      "notes": "Corrosive strong acid. Irritant vapors."
     },
     {
-      "name": "Acide sulfurique (H2SO4)",
+      "name": "Sulfuric acid (H2SO4)",
       "smiles": "OS(=O)(=O)O",
       "cas": "7664-93-9",
       "hazard_score": 0.65,
       "ghs_pictograms": ["GHS05"],
       "signal_word": "Danger",
       "h_statements": ["H290","H314"],
-      "notes": "Acide fort très corrosif, réaction exothermique avec l'eau. Toujours ajouter l'acide à l'eau, jamais l'inverse."
+      "notes": "Very corrosive strong acid."
     },
     {
-      "name": "Acide trifluoroacétique (TFA)",
+      "name": "Tetrafluoroacetic acid (TFA)",
       "smiles": "OC(=O)C(F)(F)F",
       "cas": "76-05-1",
       "hazard_score": 0.45,
       "ghs_pictograms": ["GHS05","GHS07"],
       "signal_word": "Danger",
       "h_statements": ["H226","H311","H314","H331"],
-      "notes": "Acide fort corrosif utilisé pour déprotection Boc. Nocif par inhalation."
+      "notes": "Very corrosive strong acid used for boc deprotection."
     },
     {
-      "name": "Acide phosphorique (H3PO4)",
+      "name": "Phsophoric acid (H3PO4)",
       "smiles": "OP(=O)(O)O",
       "cas": "7664-38-2",
       "hazard_score": 0.30,
       "ghs_pictograms": ["GHS05"],
       "signal_word": "Danger",
       "h_statements": ["H290","H314"],
-      "notes": "Acide corrosif modéré. Moins dangereux que HCl ou H2SO4 concentrés."
+      "notes": "Corrosive acid."
     },
     {
-      "name": "Soude (NaOH)",
+      "name": "Caustic soda(NaOH)",
       "smiles": "[Na+].[OH-]",
       "cas": "1310-73-2",
       "hazard_score": 0.40,
       "ghs_pictograms": ["GHS05"],
       "signal_word": "Danger",
       "h_statements": ["H290","H314"],
-      "notes": "Base forte corrosive. Réaction exothermique à la dissolution. Lave la peau et les yeux."
+      "notes": "Corrosive strong base."
     },
     {
-      "name": "Potasse (KOH)",
+      "name": "Caustic potash (KOH)",
       "smiles": "[K+].[OH-]",
       "cas": "1310-58-3",
       "hazard_score": 0.40,
       "ghs_pictograms": ["GHS05"],
       "signal_word": "Danger",
       "h_statements": ["H290","H314"],
-      "notes": "Base forte corrosive. Propriétés similaires à NaOH mais légèrement plus soluble dans les solvants organiques."
+      "notes": "Corrosive strong base. More soluble in organic solvents than NaOH."
     },
     {
-      "name": "Diméthylsulfoxyde (DMSO)",
+      "name": "Dimethylsulfoxide (DMSO)",
       "smiles": "CS(C)=O",
       "cas": "67-68-5",
       "hazard_score": 0.10,
       "ghs_pictograms": [],
-      "signal_word": "Aucun",
+      "signal_word": "None",
       "h_statements": [],
-      "notes": "Solvant polaire aprotique très peu toxique. Augmente la perméabilité cutanée, ce qui peut être dangereux si d'autres réactifs toxiques sont présents."
+      "notes": "Aprotic polar solvent. Low toxicity."
     },
     {
-      "name": "1,2-Dichloroéthane (DCE)",
+      "name": "1,2-Dichloroethane (DCE)",
       "smiles": "ClCCCl",
       "cas": "107-06-2",
       "hazard_score": 0.60,
