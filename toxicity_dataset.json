@@ -1,0 +1,633 @@
+{
+  "_metadata": {
+    "description": "Dataset de toxicité enrichi — associe chaque composé chimique (SMILES canonique) à ses informations de danger GHS. Utilisé par le programme pour calculer le score de toxicité d'une route en interrogeant chaque réactif et solvant. Sources : GHS / ECHA / PubChem / Sigma-Aldrich SDS.",
+    "version": "2.0",
+    "hazard_scale": "0.0 = aucun danger connu, 1.0 = extrêmement dangereux",
+    "ghs_codes": "H2xx=physique, H3xx=santé, H4xx=environnement",
+    "last_updated": "2026-04-27"
+  },
+
+  "compounds": [
+
+    {
+      "name": "Éthanol",
+      "smiles": "CCO",
+      "cas": "64-17-5",
+      "hazard_score": 0.15,
+      "ghs_pictograms": ["GHS02"],
+      "signal_word": "Attention",
+      "h_statements": ["H225"],
+      "notes": "Inflammable. Solvant courant, faible toxicité systémique."
+    },
+    {
+      "name": "Méthanol",
+      "smiles": "CO",
+      "cas": "67-56-1",
+      "hazard_score": 0.55,
+      "ghs_pictograms": ["GHS02","GHS06","GHS08"],
+      "signal_word": "Danger",
+      "h_statements": ["H225","H301","H311","H331","H370"],
+      "notes": "Toxique par toutes voies. Peut causer cécité. À substituer par l'éthanol si possible."
+    },
+    {
+      "name": "THF (tétrahydrofurane)",
+      "smiles": "C1CCOC1",
+      "cas": "109-99-9",
+      "hazard_score": 0.40,
+      "ghs_pictograms": ["GHS02","GHS07","GHS08"],
+      "signal_word": "Danger",
+      "h_statements": ["H225","H302","H319","H335","H351"],
+      "notes": "Forme des peroxydes explosifs au stockage. Tester avant usage. Irritant."
+    },
+    {
+      "name": "DCM (dichlorométhane)",
+      "smiles": "ClCCl",
+      "cas": "75-09-2",
+      "hazard_score": 0.65,
+      "ghs_pictograms": ["GHS06","GHS08"],
+      "signal_word": "Danger",
+      "h_statements": ["H315","H319","H335","H336","H351","H373"],
+      "notes": "Cancérigène suspecté (cat. 2). En cours de restriction REACH en Europe."
+    },
+    {
+      "name": "DMF (diméthylformamide)",
+      "smiles": "CN(C)C=O",
+      "cas": "68-12-2",
+      "hazard_score": 0.60,
+      "ghs_pictograms": ["GHS02","GHS06","GHS08"],
+      "signal_word": "Danger",
+      "h_statements": ["H226","H312","H319","H332","H360D"],
+      "notes": "Reprotoxique cat. 1B. Interdit en contexte pharmaceutique. Substitut : NMP ou DMAc."
+    },
+    {
+      "name": "Acide acétique",
+      "smiles": "CC(=O)O",
+      "cas": "64-19-7",
+      "hazard_score": 0.30,
+      "ghs_pictograms": ["GHS02","GHS05"],
+      "signal_word": "Danger",
+      "h_statements": ["H226","H314"],
+      "notes": "Corrosif concentré. Dilué : solvant relativement acceptable."
+    },
+    {
+      "name": "Acide formique",
+      "smiles": "OC=O",
+      "cas": "64-18-6",
+      "hazard_score": 0.35,
+      "ghs_pictograms": ["GHS02","GHS05","GHS06"],
+      "signal_word": "Danger",
+      "h_statements": ["H226","H302","H311","H314","H331"],
+      "notes": "Corrosif. Biosourcé possible. Solvant vert potentiel à basse concentration."
+    },
+    {
+      "name": "Acétonitrile",
+      "smiles": "CC#N",
+      "cas": "75-05-8",
+      "hazard_score": 0.40,
+      "ghs_pictograms": ["GHS02","GHS07"],
+      "signal_word": "Danger",
+      "h_statements": ["H225","H302","H312","H319","H332"],
+      "notes": "Inflammable, irritant. Moins problématique que DCM ou DMF."
+    },
+    {
+      "name": "Toluène",
+      "smiles": "Cc1ccccc1",
+      "cas": "108-88-3",
+      "hazard_score": 0.50,
+      "ghs_pictograms": ["GHS02","GHS07","GHS08"],
+      "signal_word": "Danger",
+      "h_statements": ["H225","H304","H315","H336","H361d","H373"],
+      "notes": "Reprotoxique suspecté. Neurotoxique à exposition prolongée."
+    },
+    {
+      "name": "BBr3 (tribromure de bore)",
+      "smiles": "BrB(Br)Br",
+      "cas": "10294-33-4",
+      "hazard_score": 0.90,
+      "ghs_pictograms": ["GHS05","GHS06"],
+      "signal_word": "Danger",
+      "h_statements": ["H290","H300","H310","H314","H330"],
+      "notes": "Extrêmement corrosif. Réagit violemment avec l'eau. Manipulation sous atmosphère inerte uniquement."
+    },
+    {
+      "name": "LDA (diisopropylamidure de lithium)",
+      "smiles": "CC(C)[N-]C(C)C.[Li+]",
+      "cas": "4111-54-0",
+      "hazard_score": 0.80,
+      "ghs_pictograms": ["GHS02","GHS05"],
+      "signal_word": "Danger",
+      "h_statements": ["H250","H260","H314"],
+      "notes": "Pyrophorique. S'enflamme spontanément à l'air. Réagit violemment avec l'eau."
+    },
+    {
+      "name": "NaBH4 (borohydrure de sodium)",
+      "smiles": "[Na+].[BH4-]",
+      "cas": "16940-66-2",
+      "hazard_score": 0.35,
+      "ghs_pictograms": ["GHS02","GHS05","GHS06"],
+      "signal_word": "Danger",
+      "h_statements": ["H260","H301","H311","H314","H331"],
+      "notes": "Dégage H2 au contact de l'eau. Corrosif. Réducteur courant mais à manipuler avec précaution."
+    },
+    {
+      "name": "Méthylamine",
+      "smiles": "CN",
+      "cas": "74-89-5",
+      "hazard_score": 0.70,
+      "ghs_pictograms": ["GHS02","GHS05","GHS06"],
+      "signal_word": "Danger",
+      "h_statements": ["H220","H280","H311","H314","H331"],
+      "notes": "Gaz extrêmement inflammable. Très volatile, irritante pour les voies respiratoires."
+    },
+    {
+      "name": "Ferricyanure de potassium",
+      "smiles": "[K+].[K+].[K+].[Fe-3](C#N)(C#N)(C#N)(C#N)(C#N)C#N",
+      "cas": "13746-66-2",
+      "hazard_score": 0.25,
+      "ghs_pictograms": ["GHS07"],
+      "signal_word": "Attention",
+      "h_statements": ["H302","H312"],
+      "notes": "Oxydant doux. Libère HCN en milieu acide — ne jamais acidifier. Peu dangereux en usage normal."
+    },
+    {
+      "name": "Acrylate d'éthyle",
+      "smiles": "C=CC(=O)OCC",
+      "cas": "140-88-5",
+      "hazard_score": 0.55,
+      "ghs_pictograms": ["GHS02","GHS06","GHS07","GHS08"],
+      "signal_word": "Danger",
+      "h_statements": ["H225","H302","H312","H317","H332","H335"],
+      "notes": "Irritant cutané et respiratoire. Sensibilisant potentiel."
+    },
+    {
+      "name": "Pd/C (palladium sur charbon)",
+      "smiles": "[Pd]",
+      "cas": "7440-05-3",
+      "hazard_score": 0.30,
+      "ghs_pictograms": ["GHS07"],
+      "signal_word": "Attention",
+      "h_statements": ["H317","H334"],
+      "notes": "Catalyseur. Peut s'enflammer si humide et séché trop vite. Sensibilisant."
+    },
+    {
+      "name": "NaH (hydrure de sodium)",
+      "smiles": "[Na-].[H+]",
+      "cas": "7646-69-7",
+      "hazard_score": 0.85,
+      "ghs_pictograms": ["GHS02","GHS05"],
+      "signal_word": "Danger",
+      "h_statements": ["H260","H314"],
+      "notes": "Pyrophorique sous forme fine. Réagit violemment avec l'eau en dégageant H2 inflammable. Corrosif."
+    },
+    {
+      "name": "n-BuLi (n-butyllithium)",
+      "smiles": "[Li]CCCC",
+      "cas": "109-72-8",
+      "hazard_score": 0.95,
+      "ghs_pictograms": ["GHS02","GHS05"],
+      "signal_word": "Danger",
+      "h_statements": ["H225","H250","H260","H290","H314","H336"],
+      "notes": "Extrêmement pyrophorique. Une des bases les plus dangereuses du laboratoire. Réagit violemment avec l'eau, l'alcool et l'air."
+    },
+    {
+      "name": "Carbonate de césium (Cs2CO3)",
+      "smiles": "[Cs+].[Cs+].[O-]C([O-])=O",
+      "cas": "534-17-8",
+      "hazard_score": 0.30,
+      "ghs_pictograms": ["GHS07"],
+      "signal_word": "Attention",
+      "h_statements": ["H302","H312","H332"],
+      "notes": "Base douce, peu corrosive. Irritant par ingestion et inhalation. Nuisible à l'environnement aquatique."
+    },
+    {
+      "name": "Carbonate de potassium (K2CO3)",
+      "smiles": "[K+].[K+].[O-]C([O-])=O",
+      "cas": "584-08-7",
+      "hazard_score": 0.20,
+      "ghs_pictograms": ["GHS07"],
+      "signal_word": "Attention",
+      "h_statements": ["H315","H319","H335"],
+      "notes": "Base douce. Irritant oculaire et cutané modéré. L'un des réactifs les plus bénins du laboratoire."
+    },
+    {
+      "name": "Triéthylamine (Et3N / TEA)",
+      "smiles": "CCN(CC)CC",
+      "cas": "121-44-8",
+      "hazard_score": 0.40,
+      "ghs_pictograms": ["GHS02","GHS05","GHS07"],
+      "signal_word": "Danger",
+      "h_statements": ["H225","H302","H311","H314","H331","H332"],
+      "notes": "Inflammable. Corrosif pour les voies respiratoires. Base organique courante."
+    },
+    {
+      "name": "DIPEA (N,N-diisopropyléthylamine, base de Hünig)",
+      "smiles": "CCN(C(C)C)C(C)C",
+      "cas": "7087-68-5",
+      "hazard_score": 0.35,
+      "ghs_pictograms": ["GHS02","GHS05","GHS07"],
+      "signal_word": "Danger",
+      "h_statements": ["H225","H302","H312","H314","H332"],
+      "notes": "Base encombrée, moins nucléophile que Et3N. Irritant cutané, corrosif à forte dose."
+    },
+    {
+      "name": "Catalyseur de Grubbs 1ère génération",
+      "smiles": "Cl[Ru](=CC1=CC=CC=C1)(Cl)[P](C1CCCCC1)(C1CCCCC1)C1CCCCC1",
+      "cas": "172222-30-9",
+      "hazard_score": 0.35,
+      "ghs_pictograms": ["GHS07","GHS09"],
+      "signal_word": "Attention",
+      "h_statements": ["H302","H312","H332","H410"],
+      "notes": "Catalyseur de métathèse. Toxique pour les organismes aquatiques. Irritant modéré. Déchets Ru à traiter spécifiquement."
+    },
+    {
+      "name": "Catalyseur de Grubbs 2ème génération",
+      "smiles": "Cl[Ru](=CC1=CC=CC=C1)(Cl)(c1ccccc1-c1ccccc1N1CCNC1)[P](C1CCCCC1)(C1CCCCC1)C1CCCCC1",
+      "cas": "246047-72-3",
+      "hazard_score": 0.35,
+      "ghs_pictograms": ["GHS07","GHS09"],
+      "signal_word": "Attention",
+      "h_statements": ["H302","H332","H410"],
+      "notes": "Catalyseur de métathèse 2G, plus actif que 1G. Mêmes précautions environnementales."
+    },
+    {
+      "name": "Pd(dppf)Cl2·CH2Cl2",
+      "smiles": "[Pd]",
+      "cas": "95464-05-4",
+      "hazard_score": 0.40,
+      "ghs_pictograms": ["GHS07","GHS09"],
+      "signal_word": "Attention",
+      "h_statements": ["H302","H317","H334","H410"],
+      "notes": "Catalyseur Pd pour couplage Suzuki sp3-sp2. Sensibilisant. Très toxique pour l'environnement aquatique."
+    },
+    {
+      "name": "Pd(PPh3)4 (tétrakistriphénylphosphinepalladium)",
+      "smiles": "[Pd]",
+      "cas": "14221-01-3",
+      "hazard_score": 0.40,
+      "ghs_pictograms": ["GHS07","GHS09"],
+      "signal_word": "Attention",
+      "h_statements": ["H302","H317","H334","H400","H410"],
+      "notes": "Catalyseur Pd(0). Sensibilisant pulmonaire. Très toxique pour l'environnement aquatique."
+    },
+    {
+      "name": "TBAF (fluorure de tétrabutylammonium)",
+      "smiles": "[F-].CCCC[N+](CCCC)(CCCC)CCCC",
+      "cas": "429-41-4",
+      "hazard_score": 0.30,
+      "ghs_pictograms": ["GHS05","GHS07"],
+      "signal_word": "Danger",
+      "h_statements": ["H302","H311","H314","H332"],
+      "notes": "Source de fluorure fort. Corrosif. Utilisé pour déprotection de silyles (TMS, TBS)."
+    },
+    {
+      "name": "m-CPBA (acide méta-chloroperbenzoïque)",
+      "smiles": "OOC(=O)c1cccc(Cl)c1",
+      "cas": "937-14-4",
+      "hazard_score": 0.55,
+      "ghs_pictograms": ["GHS01","GHS05","GHS07"],
+      "signal_word": "Danger",
+      "h_statements": ["H271","H302","H314","H317","H410"],
+      "notes": "Oxydant fort. Risque d'explosion au contact de matières inflammables. Corrosif. Époxydation de Weiss-Cook."
+    },
+    {
+      "name": "OsO4 (tétroxyde d'osmium)",
+      "smiles": "O=Os(=O)(=O)=O",
+      "cas": "20816-12-0",
+      "hazard_score": 0.95,
+      "ghs_pictograms": ["GHS06","GHS08","GHS09"],
+      "signal_word": "Danger",
+      "h_statements": ["H300","H310","H330","H373","H400","H410"],
+      "notes": "Extrêmement toxique par toutes voies. Cancérigène suspecté. Très toxique pour l'environnement. Utiliser en quantité catalytique avec NMO comme co-oxydant."
+    },
+    {
+      "name": "NMO (N-oxyde de N-méthylmorpholine)",
+      "smiles": "C[N+]1([O-])CCOCC1",
+      "cas": "7529-22-8",
+      "hazard_score": 0.25,
+      "ghs_pictograms": ["GHS07"],
+      "signal_word": "Attention",
+      "h_statements": ["H302","H312","H332"],
+      "notes": "Co-oxydant pour OsO4 (dihydroxylation de Upjohn). Peu dangereux en soi."
+    },
+    {
+      "name": "Dess-Martin Periodinane (DMP)",
+      "smiles": "CC(=O)O[I]1(OC(C)=O)(OC(C)=O)c2ccccc2C(=O)O1",
+      "cas": "87413-09-0",
+      "hazard_score": 0.50,
+      "ghs_pictograms": ["GHS01","GHS05","GHS07"],
+      "signal_word": "Danger",
+      "h_statements": ["H271","H302","H314","H317"],
+      "notes": "Oxydant d'alcools en carbonyles. Risque d'explosion si chauffé. Corrosif. Alternative verte : TEMPO/NaOCl."
+    },
+    {
+      "name": "DIBAL-H (hydrure de diisobutylaluminium)",
+      "smiles": "CC(C)C[Al](CC(C)C)H",
+      "cas": "1191-15-7",
+      "hazard_score": 0.85,
+      "ghs_pictograms": ["GHS02","GHS05"],
+      "signal_word": "Danger",
+      "h_statements": ["H225","H250","H260","H314"],
+      "notes": "Pyrophorique. Réducteur puissant. Réagit violemment avec l'eau. Utilisé pour réduction partielle d'esters en aldéhydes."
+    },
+    {
+      "name": "Acide chlorhydrique (HCl)",
+      "smiles": "Cl",
+      "cas": "7647-01-0",
+      "hazard_score": 0.50,
+      "ghs_pictograms": ["GHS05","GHS06","GHS07"],
+      "signal_word": "Danger",
+      "h_statements": ["H290","H314","H335"],
+      "notes": "Acide fort corrosif. Les vapeurs sont irritantes pour les voies respiratoires."
+    },
+    {
+      "name": "Acide sulfurique (H2SO4)",
+      "smiles": "OS(=O)(=O)O",
+      "cas": "7664-93-9",
+      "hazard_score": 0.65,
+      "ghs_pictograms": ["GHS05"],
+      "signal_word": "Danger",
+      "h_statements": ["H290","H314"],
+      "notes": "Acide fort très corrosif, réaction exothermique avec l'eau. Toujours ajouter l'acide à l'eau, jamais l'inverse."
+    },
+    {
+      "name": "Acide trifluoroacétique (TFA)",
+      "smiles": "OC(=O)C(F)(F)F",
+      "cas": "76-05-1",
+      "hazard_score": 0.45,
+      "ghs_pictograms": ["GHS05","GHS07"],
+      "signal_word": "Danger",
+      "h_statements": ["H226","H311","H314","H331"],
+      "notes": "Acide fort corrosif utilisé pour déprotection Boc. Nocif par inhalation."
+    },
+    {
+      "name": "Acide phosphorique (H3PO4)",
+      "smiles": "OP(=O)(O)O",
+      "cas": "7664-38-2",
+      "hazard_score": 0.30,
+      "ghs_pictograms": ["GHS05"],
+      "signal_word": "Danger",
+      "h_statements": ["H290","H314"],
+      "notes": "Acide corrosif modéré. Moins dangereux que HCl ou H2SO4 concentrés."
+    },
+    {
+      "name": "Soude (NaOH)",
+      "smiles": "[Na+].[OH-]",
+      "cas": "1310-73-2",
+      "hazard_score": 0.40,
+      "ghs_pictograms": ["GHS05"],
+      "signal_word": "Danger",
+      "h_statements": ["H290","H314"],
+      "notes": "Base forte corrosive. Réaction exothermique à la dissolution. Lave la peau et les yeux."
+    },
+    {
+      "name": "Potasse (KOH)",
+      "smiles": "[K+].[OH-]",
+      "cas": "1310-58-3",
+      "hazard_score": 0.40,
+      "ghs_pictograms": ["GHS05"],
+      "signal_word": "Danger",
+      "h_statements": ["H290","H314"],
+      "notes": "Base forte corrosive. Propriétés similaires à NaOH mais légèrement plus soluble dans les solvants organiques."
+    },
+    {
+      "name": "Diméthylsulfoxyde (DMSO)",
+      "smiles": "CS(C)=O",
+      "cas": "67-68-5",
+      "hazard_score": 0.10,
+      "ghs_pictograms": [],
+      "signal_word": "Aucun",
+      "h_statements": [],
+      "notes": "Solvant polaire aprotique très peu toxique. Augmente la perméabilité cutanée, ce qui peut être dangereux si d'autres réactifs toxiques sont présents."
+    },
+    {
+      "name": "1,2-Dichloroéthane (DCE)",
+      "smiles": "ClCCCl",
+      "cas": "107-06-2",
+      "hazard_score": 0.60,
+      "ghs_pictograms": ["GHS02","GHS06","GHS08"],
+      "signal_word": "Danger",
+      "h_statements": ["H225","H302","H315","H319","H351"],
+      "notes": "Cancérigène suspecté (cat. 2). Solvant courant pour métathèse (Smith 2016). À éviter au profit d'alternatives."
+    },
+    {
+      "name": "HFIP (hexafluoroisopropanol)",
+      "smiles": "OC(C(F)(F)F)C(F)(F)F",
+      "cas": "920-66-1",
+      "hazard_score": 0.45,
+      "ghs_pictograms": ["GHS05","GHS07"],
+      "signal_word": "Danger",
+      "h_statements": ["H302","H311","H314","H331"],
+      "notes": "Solvant polaire utilisé en photocyclisation (Smith 2016). Corrosif. Nocif par inhalation."
+    },
+    {
+      "name": "Eau",
+      "smiles": "O",
+      "cas": "7732-18-5",
+      "hazard_score": 0.00,
+      "ghs_pictograms": [],
+      "signal_word": "Aucun",
+      "h_statements": [],
+      "notes": "Solvant idéal selon les 12 principes de la chimie verte. Score de toxicité nul."
+    },
+    {
+      "name": "Acétate d'éthyle",
+      "smiles": "CCOC(C)=O",
+      "cas": "141-78-6",
+      "hazard_score": 0.15,
+      "ghs_pictograms": ["GHS02","GHS07"],
+      "signal_word": "Attention",
+      "h_statements": ["H225","H319","H336"],
+      "notes": "Solvant d'extraction bénin. Inflammable, légèrement irritant. Biosourcé possible."
+    },
+    {
+      "name": "Hexane (n-hexane)",
+      "smiles": "CCCCCC",
+      "cas": "110-54-3",
+      "hazard_score": 0.45,
+      "ghs_pictograms": ["GHS02","GHS07","GHS08","GHS09"],
+      "signal_word": "Danger",
+      "h_statements": ["H225","H304","H315","H336","H361f","H373","H411"],
+      "notes": "Neurotoxique chronique (neuropathie périphérique). Substituer par heptane si possible."
+    },
+    {
+      "name": "Heptane",
+      "smiles": "CCCCCCC",
+      "cas": "142-82-5",
+      "hazard_score": 0.25,
+      "ghs_pictograms": ["GHS02","GHS07","GHS09"],
+      "signal_word": "Attention",
+      "h_statements": ["H225","H304","H315","H336","H410"],
+      "notes": "Alternative plus sûre à l'hexane. Peu neurotoxique. Inflammable."
+    },
+    {
+      "name": "Dioxane (1,4-dioxane)",
+      "smiles": "C1COCCO1",
+      "cas": "123-91-1",
+      "hazard_score": 0.60,
+      "ghs_pictograms": ["GHS02","GHS06","GHS08"],
+      "signal_word": "Danger",
+      "h_statements": ["H225","H302","H312","H332","H351"],
+      "notes": "Cancérigène suspecté (cat. 2). Forme des peroxydes. À éviter au profit du THF ou du 2-MeTHF."
+    },
+    {
+      "name": "2-MeTHF (2-méthyltétrahydrofurane)",
+      "smiles": "C[C@@H]1CCCO1",
+      "cas": "96-47-9",
+      "hazard_score": 0.25,
+      "ghs_pictograms": ["GHS02","GHS07"],
+      "signal_word": "Attention",
+      "h_statements": ["GHS02","H225","H302","H319","H336"],
+      "notes": "Alternative verte au THF (biosourcé). Immiscible à l'eau. Moins de formation de peroxydes."
+    },
+    {
+      "name": "Acide citrique",
+      "smiles": "OC(CC(O)=O)(CC(O)=O)C(O)=O",
+      "cas": "77-92-9",
+      "hazard_score": 0.10,
+      "ghs_pictograms": ["GHS07"],
+      "signal_word": "Attention",
+      "h_statements": ["H319"],
+      "notes": "Irritant oculaire léger. Utilisé comme agent de lactonisation dans la synthèse Smith 2016. Très faible toxicité."
+    },
+    {
+      "name": "Mucobromic acid (acide mucobrômique)",
+      "smiles": "OC(=O)C(Br)=C(Br)C=O",
+      "cas": "488-11-9",
+      "hazard_score": 0.55,
+      "ghs_pictograms": ["GHS05","GHS07"],
+      "signal_word": "Danger",
+      "h_statements": ["H302","H314","H317"],
+      "notes": "Réactif de départ dans la synthèse Smith 2016. Corrosif. Irritant cutané. À manipuler sous hotte."
+    },
+    {
+      "name": "Brome (Br2)",
+      "smiles": "BrBr",
+      "cas": "7726-95-6",
+      "hazard_score": 0.90,
+      "ghs_pictograms": ["GHS05","GHS06","GHS09"],
+      "signal_word": "Danger",
+      "h_statements": ["H290","H300","H310","H314","H330","H400"],
+      "notes": "Liquide corrosif fumant extrêmement dangereux. Vapeurs suffocantes. Très toxique pour l'environnement aquatique."
+    },
+    {
+      "name": "MnO2 (dioxyde de manganèse)",
+      "smiles": "O=[Mn]=O",
+      "cas": "1313-13-9",
+      "hazard_score": 0.35,
+      "ghs_pictograms": ["GHS07","GHS08"],
+      "signal_word": "Attention",
+      "h_statements": ["H302","H332","H373"],
+      "notes": "Oxydant doux des alcools allyliques/benzyliques. Toxique pour les organes à exposition répétée (manganisme)."
+    },
+    {
+      "name": "K2S2O8 (persulfate de potassium)",
+      "smiles": "[K+].[K+].[O-]S(=O)(=O)OOS([O-])(=O)=O",
+      "cas": "7727-21-1",
+      "hazard_score": 0.40,
+      "ghs_pictograms": ["GHS03","GHS07","GHS08"],
+      "signal_word": "Danger",
+      "h_statements": ["H272","H302","H315","H317","H319","H334","H335"],
+      "notes": "Oxydant. Sensibilisant respiratoire et cutané. Utilisé comme oxydant en couplage oxydatif phénolique."
+    },
+    {
+      "name": "Phénol (C6H5OH)",
+      "smiles": "Oc1ccccc1",
+      "cas": "108-95-2",
+      "hazard_score": 0.70,
+      "ghs_pictograms": ["GHS05","GHS06","GHS08","GHS09"],
+      "signal_word": "Danger",
+      "h_statements": ["H301","H311","H314","H331","H341","H373","H410"],
+      "notes": "Toxique par toutes voies. Corrosif. Mutagène suspecté. Réactif de départ courant, à manipuler avec protection totale."
+    },
+    {
+      "name": "Iode (I2)",
+      "smiles": "II",
+      "cas": "7553-56-2",
+      "hazard_score": 0.40,
+      "ghs_pictograms": ["GHS05","GHS07","GHS09"],
+      "signal_word": "Danger",
+      "h_statements": ["H290","H302","H312","H315","H319","H332","H400"],
+      "notes": "Oxydant doux. Irritant oculaire et cutané. Très toxique pour l'environnement aquatique."
+    },
+    {
+      "name": "Vanilline (4-hydroxy-3-méthoxybenzaldéhyde)",
+      "smiles": "COc1cc(C=O)ccc1O",
+      "cas": "121-33-5",
+      "hazard_score": 0.10,
+      "ghs_pictograms": ["GHS07"],
+      "signal_word": "Attention",
+      "h_statements": ["H302"],
+      "notes": "Réactif de départ biosourcé. Faiblement nocif par ingestion. Précurseur de la 2-bromovanilline (Smith 2016)."
+    },
+    {
+      "name": "2-Bromovanilline",
+      "smiles": "COc1cc(C=O)ccc1OBr",
+      "cas": "5392-10-9",
+      "hazard_score": 0.35,
+      "ghs_pictograms": ["GHS07"],
+      "signal_word": "Attention",
+      "h_statements": ["H302","H312","H332"],
+      "notes": "Réactif de départ de la synthèse Smith 2016. Nocif par inhalation et contact. Moins dangereux que la plupart des réactifs organiques."
+    },
+    {
+      "name": "Naphtalène",
+      "smiles": "c1ccc2ccccc2c1",
+      "cas": "91-20-3",
+      "hazard_score": 0.45,
+      "ghs_pictograms": ["GHS02","GHS06","GHS08","GHS09"],
+      "signal_word": "Danger",
+      "h_statements": ["H228","H301","H311","H331","H351","H400","H410"],
+      "notes": "Réactif de départ synthèse Gates 1952. Cancérigène suspecté. Très toxique pour l'environnement aquatique."
+    },
+    {
+      "name": "Acide 2-acétoxybenzoïque (aspirine)",
+      "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+      "cas": "50-78-2",
+      "hazard_score": 0.15,
+      "ghs_pictograms": ["GHS07"],
+      "signal_word": "Attention",
+      "h_statements": ["H302","H317","H319"],
+      "notes": "Médicament AINS. Faiblement irritant. Score très bas."
+    },
+    {
+      "name": "Chlorure d'acétyle (AcCl)",
+      "smiles": "CC(=O)Cl",
+      "cas": "75-36-5",
+      "hazard_score": 0.65,
+      "ghs_pictograms": ["GHS02","GHS05"],
+      "signal_word": "Danger",
+      "h_statements": ["H225","H302","H314","H331","H332"],
+      "notes": "Réactif d'acylation très réactif. Corrosif. Réagit violemment avec l'eau en dégageant HCl."
+    },
+    {
+      "name": "Anhydride acétique",
+      "smiles": "CC(=O)OC(C)=O",
+      "cas": "108-24-7",
+      "hazard_score": 0.40,
+      "ghs_pictograms": ["GHS02","GHS05","GHS07"],
+      "signal_word": "Danger",
+      "h_statements": ["H226","H302","H314","H332"],
+      "notes": "Agent d'acétylation. Corrosif. Réagit avec l'eau. Moins dangereux que AcCl."
+    },
+    {
+      "name": "Chlorure de méthylène-triphenylphosphonium (sel de Wittig)",
+      "smiles": "ClC[P+](c1ccccc1)(c1ccccc1)c1ccccc1",
+      "cas": "1779-58-4",
+      "hazard_score": 0.30,
+      "ghs_pictograms": ["GHS07"],
+      "signal_word": "Attention",
+      "h_statements": ["H302","H312","H332"],
+      "notes": "Réactif de Wittig. Nocif par toutes voies. Manipulation avec EPI standard."
+    },
+    {
+      "name": "Solvant aucun (neat)",
+      "smiles": "",
+      "cas": "",
+      "hazard_score": 0.00,
+      "ghs_pictograms": [],
+      "signal_word": "Aucun",
+      "h_statements": [],
+      "notes": "Réaction sans solvant (neat). Idéal selon les principes de chimie verte."
+    }
+  ]
+}
