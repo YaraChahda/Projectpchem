@@ -256,55 +256,55 @@
       "ghs_pictograms": ["GHS07","GHS09"],
       "signal_word": "Caution",
       "h_statements": ["H302","H317","H334","H410"],
-      "notes": "Catalyseur Pd pour couplage Suzuki sp3-sp2. Sensibilisant. Très toxique pour l'environnement aquatique."
+      "notes": "Catalyst for sp3-sp2 Suzuki coupling. Sensitising. Very biohazardous."
     },
     {
-      "name": "Pd(PPh3)4 (tétrakistriphénylphosphinepalladium)",
+      "name": "Pd(PPh3)4 (tetrakistriphenylphosphinepalladium)",
       "smiles": "[Pd]",
       "cas": "14221-01-3",
       "hazard_score": 0.40,
       "ghs_pictograms": ["GHS07","GHS09"],
       "signal_word": "Attention",
       "h_statements": ["H302","H317","H334","H400","H410"],
-      "notes": "Catalyseur Pd(0). Sensibilisant pulmonaire. Très toxique pour l'environnement aquatique."
+      "notes": "Biohazardous."
     },
     {
-      "name": "TBAF (fluorure de tétrabutylammonium)",
+      "name": "TBAF (Tetrabutylammonium fluoride)",
       "smiles": "[F-].CCCC[N+](CCCC)(CCCC)CCCC",
       "cas": "429-41-4",
       "hazard_score": 0.30,
       "ghs_pictograms": ["GHS05","GHS07"],
       "signal_word": "Danger",
       "h_statements": ["H302","H311","H314","H332"],
-      "notes": "Source de fluorure fort. Corrosif. Utilisé pour déprotection de silyles (TMS, TBS)."
+      "notes": "Good source of fluoride. Corrosive. Used for deprotection of silyles (TMS, TBS) and get back the alcohol."
     },
     {
-      "name": "m-CPBA (acide méta-chloroperbenzoïque)",
+      "name": "m-CPBA (meta-chloroperoxybenzoic acid)",
       "smiles": "OOC(=O)c1cccc(Cl)c1",
       "cas": "937-14-4",
       "hazard_score": 0.55,
       "ghs_pictograms": ["GHS01","GHS05","GHS07"],
       "signal_word": "Danger",
       "h_statements": ["H271","H302","H314","H317","H410"],
-      "notes": "Oxydant fort. Risque d'explosion au contact de matières inflammables. Corrosif. Époxydation de Weiss-Cook."
+      "notes": "Strong oxidising agent. Can be explosive when in contact with flammable materials. Corrosive. Used for epoxydation."
     },
     {
-      "name": "OsO4 (tétroxyde d'osmium)",
+      "name": "OsO4 (osmium tetraoxide)",
       "smiles": "O=Os(=O)(=O)=O",
       "cas": "20816-12-0",
       "hazard_score": 0.95,
       "ghs_pictograms": ["GHS06","GHS08","GHS09"],
       "signal_word": "Danger",
       "h_statements": ["H300","H310","H330","H373","H400","H410"],
-      "notes": "Extrêmement toxique par toutes voies. Cancérigène suspecté. Très toxique pour l'environnement. Utiliser en quantité catalytique avec NMO comme co-oxydant."
+      "notes": "Extemely toxic. Suspected carcinogenic. Biohazardous. To be used in small catalytic amounts in presence of NMO."
     },
     {
-      "name": "NMO (N-oxyde de N-méthylmorpholine)",
+      "name": "NMO (N-oxyde of N-ethylmorpholine)",
       "smiles": "C[N+]1([O-])CCOCC1",
       "cas": "7529-22-8",
       "hazard_score": 0.25,
       "ghs_pictograms": ["GHS07"],
-      "signal_word": "Attention",
+      "signal_word": "Caution",
       "h_statements": ["H302","H312","H332"],
       "notes": "Co-oxydant pour OsO4 (dihydroxylation de Upjohn). Peu dangereux en soi."
     },
