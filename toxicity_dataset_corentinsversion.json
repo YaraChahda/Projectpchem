@@ -15,7 +15,7 @@
       "cas": "64-17-5",
       "hazard_score": 0.15,
       "ghs_pictograms": ["GHS02"],
-      "signal_word": "Hazardous",
+      "signal_word": "Caution",
       "h_statements": ["H225"],
       "notes": "Flammable. Widely used solvent courant, low toxicity."
     },
@@ -27,157 +27,157 @@
       "ghs_pictograms": ["GHS02","GHS06","GHS08"],
       "signal_word": "Danger",
       "h_statements": ["H225","H301","H311","H331","H370"],
-      "notes": "Toxique par toutes voies. Peut causer cécité. À substituer par l'éthanol si possible."
+      "notes": "Toxic. Can cause blindness. To be substituted by ethanol if possible."
     },
     {
-      "name": "THF (tétrahydrofurane)",
+      "name": "THF (tetrahydrofurane)",
       "smiles": "C1CCOC1",
       "cas": "109-99-9",
       "hazard_score": 0.40,
       "ghs_pictograms": ["GHS02","GHS07","GHS08"],
       "signal_word": "Danger",
       "h_statements": ["H225","H302","H319","H335","H351"],
-      "notes": "Forme des peroxydes explosifs au stockage. Tester avant usage. Irritant."
+      "notes": "Forms explosive peroxides during storage: Check before use. Irritant."
     },
     {
-      "name": "DCM (dichlorométhane)",
+      "name": "DCM (dichloromethane)",
       "smiles": "ClCCl",
       "cas": "75-09-2",
       "hazard_score": 0.65,
       "ghs_pictograms": ["GHS06","GHS08"],
       "signal_word": "Danger",
       "h_statements": ["H315","H319","H335","H336","H351","H373"],
-      "notes": "Cancérigène suspecté (cat. 2). En cours de restriction REACH en Europe."
+      "notes": "Suspected carcinogenic (cat. 2). Soon to be restricted in Europe."
     },
     {
-      "name": "DMF (diméthylformamide)",
+      "name": "DMF (dimethylformamide)",
       "smiles": "CN(C)C=O",
       "cas": "68-12-2",
       "hazard_score": 0.60,
       "ghs_pictograms": ["GHS02","GHS06","GHS08"],
       "signal_word": "Danger",
       "h_statements": ["H226","H312","H319","H332","H360D"],
-      "notes": "Reprotoxique cat. 1B. Interdit en contexte pharmaceutique. Substitut : NMP ou DMAc."
+      "notes": "Reprotoxic cat. 1B. Banned in pharma. Substitutes : NMP or DMAc."
     },
     {
-      "name": "Acide acétique",
+      "name": "Acetic acid",
       "smiles": "CC(=O)O",
       "cas": "64-19-7",
       "hazard_score": 0.30,
       "ghs_pictograms": ["GHS02","GHS05"],
       "signal_word": "Danger",
       "h_statements": ["H226","H314"],
-      "notes": "Corrosif concentré. Dilué : solvant relativement acceptable."
+      "notes": "Corrosive when concentrated. Relatively acceptable solvent when diluted."
     },
     {
-      "name": "Acide formique",
+      "name": "Formic acid",
       "smiles": "OC=O",
       "cas": "64-18-6",
       "hazard_score": 0.35,
       "ghs_pictograms": ["GHS02","GHS05","GHS06"],
       "signal_word": "Danger",
       "h_statements": ["H226","H302","H311","H314","H331"],
-      "notes": "Corrosif. Biosourcé possible. Solvant vert potentiel à basse concentration."
+      "notes": "Corrosive. Biosourced if possible. Potential green solvent at low concentration."
     },
     {
-      "name": "Acétonitrile",
+      "name": "Acetonitrile",
       "smiles": "CC#N",
       "cas": "75-05-8",
       "hazard_score": 0.40,
       "ghs_pictograms": ["GHS02","GHS07"],
       "signal_word": "Danger",
       "h_statements": ["H225","H302","H312","H319","H332"],
-      "notes": "Inflammable, irritant. Moins problématique que DCM ou DMF."
+      "notes": "Flammable, irritant. Less problematic than DCM or DMF."
     },
     {
-      "name": "Toluène",
+      "name": "Toluene",
       "smiles": "Cc1ccccc1",
       "cas": "108-88-3",
       "hazard_score": 0.50,
       "ghs_pictograms": ["GHS02","GHS07","GHS08"],
       "signal_word": "Danger",
       "h_statements": ["H225","H304","H315","H336","H361d","H373"],
-      "notes": "Reprotoxique suspecté. Neurotoxique à exposition prolongée."
+      "notes": "Suspected reprotoxic. Neurotoxic if long exposure."
     },
     {
-      "name": "BBr3 (tribromure de bore)",
+      "name": "BBr3 (Boron tribromide)",
       "smiles": "BrB(Br)Br",
       "cas": "10294-33-4",
       "hazard_score": 0.90,
       "ghs_pictograms": ["GHS05","GHS06"],
       "signal_word": "Danger",
       "h_statements": ["H290","H300","H310","H314","H330"],
-      "notes": "Extrêmement corrosif. Réagit violemment avec l'eau. Manipulation sous atmosphère inerte uniquement."
+      "notes": "Extremely corrosive. Very reactive with water. To be manipulated in dry and inert atmosphere conditions."
     },
     {
-      "name": "LDA (diisopropylamidure de lithium)",
+      "name": "LDA (lithium diisopropylamide)",
       "smiles": "CC(C)[N-]C(C)C.[Li+]",
       "cas": "4111-54-0",
       "hazard_score": 0.80,
       "ghs_pictograms": ["GHS02","GHS05"],
       "signal_word": "Danger",
       "h_statements": ["H250","H260","H314"],
-      "notes": "Pyrophorique. S'enflamme spontanément à l'air. Réagit violemment avec l'eau."
+      "notes": "Pyrophoric. Spontaneously ignites in the air. Very reactive with water."
     },
     {
-      "name": "NaBH4 (borohydrure de sodium)",
+      "name": "NaBH4 (sodium borohydride)",
       "smiles": "[Na+].[BH4-]",
       "cas": "16940-66-2",
       "hazard_score": 0.35,
       "ghs_pictograms": ["GHS02","GHS05","GHS06"],
       "signal_word": "Danger",
       "h_statements": ["H260","H301","H311","H314","H331"],
-      "notes": "Dégage H2 au contact de l'eau. Corrosif. Réducteur courant mais à manipuler avec précaution."
+      "notes": "Forms dihydrogen when in contact with water. Corrosive. Wiedely used reducing agent. To be manipulated with caution."
     },
     {
-      "name": "Méthylamine",
+      "name": "Methylamine",
       "smiles": "CN",
       "cas": "74-89-5",
       "hazard_score": 0.70,
       "ghs_pictograms": ["GHS02","GHS05","GHS06"],
       "signal_word": "Danger",
       "h_statements": ["H220","H280","H311","H314","H331"],
-      "notes": "Gaz extrêmement inflammable. Très volatile, irritante pour les voies respiratoires."
+      "notes": "Very flammable gas. Very volatile. Irritant for the air ways."
     },
     {
-      "name": "Ferricyanure de potassium",
+      "name": "Potassium ferricyanide",
       "smiles": "[K+].[K+].[K+].[Fe-3](C#N)(C#N)(C#N)(C#N)(C#N)C#N",
       "cas": "13746-66-2",
       "hazard_score": 0.25,
       "ghs_pictograms": ["GHS07"],
       "signal_word": "Attention",
       "h_statements": ["H302","H312"],
-      "notes": "Oxydant doux. Libère HCN en milieu acide — ne jamais acidifier. Peu dangereux en usage normal."
+      "notes": "Soft oxidising agent. Produces hydrogen cyanide in acidic media. Never to be acidified. Little hazardous for normal use."
     },
     {
-      "name": "Acrylate d'éthyle",
+      "name": "Ethyl acrylate",
       "smiles": "C=CC(=O)OCC",
       "cas": "140-88-5",
       "hazard_score": 0.55,
       "ghs_pictograms": ["GHS02","GHS06","GHS07","GHS08"],
       "signal_word": "Danger",
       "h_statements": ["H225","H302","H312","H317","H332","H335"],
-      "notes": "Irritant cutané et respiratoire. Sensibilisant potentiel."
+      "notes": "Irritant for the skin and air ways. Potential sensitising."
     },
     {
-      "name": "Pd/C (palladium sur charbon)",
+      "name": "Pd/C (palladium on charcoal)",
       "smiles": "[Pd]",
       "cas": "7440-05-3",
       "hazard_score": 0.30,
       "ghs_pictograms": ["GHS07"],
       "signal_word": "Attention",
       "h_statements": ["H317","H334"],
-      "notes": "Catalyseur. Peut s'enflammer si humide et séché trop vite. Sensibilisant."
+      "notes": "Catalyst. Flammable in humid conditions or if dried too rapidly. Sensitising."
     },
     {
-      "name": "NaH (hydrure de sodium)",
+      "name": "NaH (sodium hydride)",
       "smiles": "[Na-].[H+]",
       "cas": "7646-69-7",
       "hazard_score": 0.85,
       "ghs_pictograms": ["GHS02","GHS05"],
       "signal_word": "Danger",
       "h_statements": ["H260","H314"],
-      "notes": "Pyrophorique sous forme fine. Réagit violemment avec l'eau en dégageant H2 inflammable. Corrosif."
+      "notes": "Pyrophoric when fine powder. Violently reacts with water and produces dihydrogen. Corrosive."
     },
     {
       "name": "n-BuLi (n-butyllithium)",
@@ -187,75 +187,74 @@
       "ghs_pictograms": ["GHS02","GHS05"],
       "signal_word": "Danger",
       "h_statements": ["H225","H250","H260","H290","H314","H336"],
-      "notes": "Extrêmement pyrophorique. Une des bases les plus dangereuses du laboratoire. Réagit violemment avec l'eau, l'alcool et l'air."
+      "notes": "Extremely pyrophoric. Extremely strong base. Extremely reactive with water, alcohol and air."
     },
     {
-      "name": "Carbonate de césium (Cs2CO3)",
+      "name": "Cesium carbonate (Cs2CO3)",
       "smiles": "[Cs+].[Cs+].[O-]C([O-])=O",
       "cas": "534-17-8",
       "hazard_score": 0.30,
       "ghs_pictograms": ["GHS07"],
-      "signal_word": "Attention",
+      "signal_word": "Caution",
       "h_statements": ["H302","H312","H332"],
-      "notes": "Base douce, peu corrosive. Irritant par ingestion et inhalation. Nuisible à l'environnement aquatique."
-    },
+      "notes": "Weak base. Little corrosive. Irritant if inhaled or ingested. Hazardous for the environment."
     {
-      "name": "Carbonate de potassium (K2CO3)",
+      "name": "Potassium carbonate (K2CO3)",
       "smiles": "[K+].[K+].[O-]C([O-])=O",
       "cas": "584-08-7",
       "hazard_score": 0.20,
       "ghs_pictograms": ["GHS07"],
-      "signal_word": "Attention",
+      "signal_word": "Caution",
       "h_statements": ["H315","H319","H335"],
-      "notes": "Base douce. Irritant oculaire et cutané modéré. L'un des réactifs les plus bénins du laboratoire."
+      "notes": "Weakbase. Irritant for the eyes and the skin."
     },
     {
-      "name": "Triéthylamine (Et3N / TEA)",
+      "name": "Triethylamine (Et3N / TEA)",
       "smiles": "CCN(CC)CC",
       "cas": "121-44-8",
       "hazard_score": 0.40,
       "ghs_pictograms": ["GHS02","GHS05","GHS07"],
       "signal_word": "Danger",
       "h_statements": ["H225","H302","H311","H314","H331","H332"],
-      "notes": "Inflammable. Corrosif pour les voies respiratoires. Base organique courante."
+      "notes": "Flammable. Corrosive for the air ways. Widely used organic base."
     },
     {
-      "name": "DIPEA (N,N-diisopropyléthylamine, base de Hünig)",
+      "name": "DIPEA (N,N-diisopropylethylamine, Hünig's base)",
       "smiles": "CCN(C(C)C)C(C)C",
       "cas": "7087-68-5",
       "hazard_score": 0.35,
       "ghs_pictograms": ["GHS02","GHS05","GHS07"],
       "signal_word": "Danger",
       "h_statements": ["H225","H302","H312","H314","H332"],
-      "notes": "Base encombrée, moins nucléophile que Et3N. Irritant cutané, corrosif à forte dose."
+      "notes": "Hindered base, less nucleophilic than Et3N. Irritant for the skin, corrosive when concentrated."
     },
     {
-      "name": "Catalyseur de Grubbs 1ère génération",
+      "name": "Grubbs's catalyst 1st gen.",
       "smiles": "Cl[Ru](=CC1=CC=CC=C1)(Cl)[P](C1CCCCC1)(C1CCCCC1)C1CCCCC1",
       "cas": "172222-30-9",
       "hazard_score": 0.35,
       "ghs_pictograms": ["GHS07","GHS09"],
-      "signal_word": "Attention",
+      "signal_word": "Caution",
       "h_statements": ["H302","H312","H332","H410"],
-      "notes": "Catalyseur de métathèse. Toxique pour les organismes aquatiques. Irritant modéré. Déchets Ru à traiter spécifiquement."
+      "notes": "Toxix for the environment. Moderate irritant."
     },
     {
-      "name": "Catalyseur de Grubbs 2ème génération",
+      "name": "Grubbs's catalyst 2nd gen.",
       "smiles": "Cl[Ru](=CC1=CC=CC=C1)(Cl)(c1ccccc1-c1ccccc1N1CCNC1)[P](C1CCCCC1)(C1CCCCC1)C1CCCCC1",
       "cas": "246047-72-3",
       "hazard_score": 0.35,
       "ghs_pictograms": ["GHS07","GHS09"],
       "signal_word": "Attention",
       "h_statements": ["H302","H332","H410"],
-      "notes": "Catalyseur de métathèse 2G, plus actif que 1G. Mêmes précautions environnementales."
-    },
+      "notes": "More active than 1st gen."
+    }, 
     {
       "name": "Pd(dppf)Cl2·CH2Cl2",
       "smiles": "[Pd]",
       "cas": "95464-05-4",
       "hazard_score": 0.40,
       "ghs_pictograms": ["GHS07","GHS09"],
-      "signal_word": "Attention",
+      "signal_word": "Caution",
       "h_statements": ["H302","H317","H334","H410"],
       "notes": "Catalyseur Pd pour couplage Suzuki sp3-sp2. Sensibilisant. Très toxique pour l'environnement aquatique."
     },
