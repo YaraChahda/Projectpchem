@@ -406,7 +406,7 @@
       "ghs_pictograms": ["GHS02","GHS06","GHS08"],
       "signal_word": "Danger",
       "h_statements": ["H225","H302","H315","H319","H351"],
-      "notes": "Cancérigène suspecté (cat. 2). Solvant courant pour métathèse (Smith 2016). À éviter au profit d'alternatives."
+      "notes": "Suspected carcinogenic (cat. 2). Common solvent."
     },
     {
       "name": "HFIP (hexafluoroisopropanol)",
@@ -416,27 +416,27 @@
       "ghs_pictograms": ["GHS05","GHS07"],
       "signal_word": "Danger",
       "h_statements": ["H302","H311","H314","H331"],
-      "notes": "Solvant polaire utilisé en photocyclisation (Smith 2016). Corrosif. Nocif par inhalation."
+      "notes": "Polar solvent used in photocyclisation. Corrosive. Toxic if inhaled."
     },
     {
-      "name": "Eau",
+      "name": "Water",
       "smiles": "O",
       "cas": "7732-18-5",
       "hazard_score": 0.00,
       "ghs_pictograms": [],
-      "signal_word": "Aucun",
+      "signal_word": "None",
       "h_statements": [],
-      "notes": "Solvant idéal selon les 12 principes de la chimie verte. Score de toxicité nul."
+      "notes": "Ideal solvent for green chemistry."
     },
     {
-      "name": "Acétate d'éthyle",
+      "name": "Ethyl acetate",
       "smiles": "CCOC(C)=O",
       "cas": "141-78-6",
       "hazard_score": 0.15,
       "ghs_pictograms": ["GHS02","GHS07"],
-      "signal_word": "Attention",
+      "signal_word": "Caution",
       "h_statements": ["H225","H319","H336"],
-      "notes": "Solvant d'extraction bénin. Inflammable, légèrement irritant. Biosourcé possible."
+      "notes": "Common extraction solvent. Flammable. Slightly irrititant."
     },
     {
       "name": "Hexane (n-hexane)",
@@ -446,7 +446,7 @@
       "ghs_pictograms": ["GHS02","GHS07","GHS08","GHS09"],
       "signal_word": "Danger",
       "h_statements": ["H225","H304","H315","H336","H361f","H373","H411"],
-      "notes": "Neurotoxique chronique (neuropathie périphérique). Substituer par heptane si possible."
+      "notes": "Neurotoxic. To be substituted by heptane if possible."
     },
     {
       "name": "Heptane",
@@ -454,9 +454,9 @@
       "cas": "142-82-5",
       "hazard_score": 0.25,
       "ghs_pictograms": ["GHS02","GHS07","GHS09"],
-      "signal_word": "Attention",
+      "signal_word": "Caution",
       "h_statements": ["H225","H304","H315","H336","H410"],
-      "notes": "Alternative plus sûre à l'hexane. Peu neurotoxique. Inflammable."
+      "notes": "Flammable."
     },
     {
       "name": "Dioxane (1,4-dioxane)",
@@ -466,151 +466,151 @@
       "ghs_pictograms": ["GHS02","GHS06","GHS08"],
       "signal_word": "Danger",
       "h_statements": ["H225","H302","H312","H332","H351"],
-      "notes": "Cancérigène suspecté (cat. 2). Forme des peroxydes. À éviter au profit du THF ou du 2-MeTHF."
+      "notes": "Suspected carcinogenic (cat. 2). Forms peroxides. To be substituted by THF or 2-MeTHF."
     },
     {
-      "name": "2-MeTHF (2-méthyltétrahydrofurane)",
+      "name": "2-MeTHF (2-methyltetrahydrofurane)",
       "smiles": "C[C@@H]1CCCO1",
       "cas": "96-47-9",
       "hazard_score": 0.25,
       "ghs_pictograms": ["GHS02","GHS07"],
-      "signal_word": "Attention",
+      "signal_word": "Caution",
       "h_statements": ["GHS02","H225","H302","H319","H336"],
-      "notes": "Alternative verte au THF (biosourcé). Immiscible à l'eau. Moins de formation de peroxydes."
+      "notes": "Green alternative of THF. Non miscible with water. Less peroxides formation."
     },
     {
-      "name": "Acide citrique",
+      "name": "Citric acid",
       "smiles": "OC(CC(O)=O)(CC(O)=O)C(O)=O",
       "cas": "77-92-9",
       "hazard_score": 0.10,
       "ghs_pictograms": ["GHS07"],
-      "signal_word": "Attention",
+      "signal_word": "Caution",
       "h_statements": ["H319"],
-      "notes": "Irritant oculaire léger. Utilisé comme agent de lactonisation dans la synthèse Smith 2016. Très faible toxicité."
+      "notes": "Slightly irritant for the eyes. Low toxicity."
     },
     {
-      "name": "Mucobromic acid (acide mucobrômique)",
+      "name": "Mucobromic acid",
       "smiles": "OC(=O)C(Br)=C(Br)C=O",
       "cas": "488-11-9",
       "hazard_score": 0.55,
       "ghs_pictograms": ["GHS05","GHS07"],
       "signal_word": "Danger",
       "h_statements": ["H302","H314","H317"],
-      "notes": "Réactif de départ dans la synthèse Smith 2016. Corrosif. Irritant cutané. À manipuler sous hotte."
+      "notes": "Starting reagent in Smith synthesis (2016). Corrosive. Irritant for the skin. To be manipulated under the fume hood."
     },
     {
-      "name": "Brome (Br2)",
+      "name": "Bromine (Br2)",
       "smiles": "BrBr",
       "cas": "7726-95-6",
       "hazard_score": 0.90,
       "ghs_pictograms": ["GHS05","GHS06","GHS09"],
       "signal_word": "Danger",
       "h_statements": ["H290","H300","H310","H314","H330","H400"],
-      "notes": "Liquide corrosif fumant extrêmement dangereux. Vapeurs suffocantes. Très toxique pour l'environnement aquatique."
+      "notes": "Extremely dangerous corrosive liquid. Suffocating vapors. Very toxic for the environement."
     },
     {
-      "name": "MnO2 (dioxyde de manganèse)",
+      "name": "MnO2 (manganese dioxide)",
       "smiles": "O=[Mn]=O",
       "cas": "1313-13-9",
       "hazard_score": 0.35,
       "ghs_pictograms": ["GHS07","GHS08"],
-      "signal_word": "Attention",
+      "signal_word": "Caution",
       "h_statements": ["H302","H332","H373"],
-      "notes": "Oxydant doux des alcools allyliques/benzyliques. Toxique pour les organes à exposition répétée (manganisme)."
+      "notes": "Soft oxidising agent of allylic/benzylic alcohols."
     },
     {
-      "name": "K2S2O8 (persulfate de potassium)",
+      "name": "K2S2O8 (potassium persulfate)",
       "smiles": "[K+].[K+].[O-]S(=O)(=O)OOS([O-])(=O)=O",
       "cas": "7727-21-1",
       "hazard_score": 0.40,
       "ghs_pictograms": ["GHS03","GHS07","GHS08"],
       "signal_word": "Danger",
       "h_statements": ["H272","H302","H315","H317","H319","H334","H335"],
-      "notes": "Oxydant. Sensibilisant respiratoire et cutané. Utilisé comme oxydant en couplage oxydatif phénolique."
+      "notes": "Oxidising agent. Used in phenolic oxidative coupling."
     },
     {
-      "name": "Phénol (C6H5OH)",
+      "name": "Phenol (C6H5OH)",
       "smiles": "Oc1ccccc1",
       "cas": "108-95-2",
       "hazard_score": 0.70,
       "ghs_pictograms": ["GHS05","GHS06","GHS08","GHS09"],
       "signal_word": "Danger",
       "h_statements": ["H301","H311","H314","H331","H341","H373","H410"],
-      "notes": "Toxique par toutes voies. Corrosif. Mutagène suspecté. Réactif de départ courant, à manipuler avec protection totale."
+      "notes": "Toxic. Corrosive. Common starting reagent."
     },
     {
-      "name": "Iode (I2)",
+      "name": "Iodine (I2)",
       "smiles": "II",
       "cas": "7553-56-2",
       "hazard_score": 0.40,
       "ghs_pictograms": ["GHS05","GHS07","GHS09"],
       "signal_word": "Danger",
       "h_statements": ["H290","H302","H312","H315","H319","H332","H400"],
-      "notes": "Oxydant doux. Irritant oculaire et cutané. Très toxique pour l'environnement aquatique."
+      "notes": "Soft oxidising agent. Irritant for the eyes and skin. Very toxic for the environement."
     },
     {
-      "name": "Vanilline (4-hydroxy-3-méthoxybenzaldéhyde)",
+      "name": "Vanilin (4-hydroxy-3-methoxybenzaldehyde)",
       "smiles": "COc1cc(C=O)ccc1O",
       "cas": "121-33-5",
       "hazard_score": 0.10,
       "ghs_pictograms": ["GHS07"],
-      "signal_word": "Attention",
+      "signal_word": "Caution",
       "h_statements": ["H302"],
-      "notes": "Réactif de départ biosourcé. Faiblement nocif par ingestion. Précurseur de la 2-bromovanilline (Smith 2016)."
+      "notes": "Biosourced starting reagent."
     },
     {
-      "name": "2-Bromovanilline",
+      "name": "2-Bromovanilin",
       "smiles": "COc1cc(C=O)ccc1OBr",
       "cas": "5392-10-9",
       "hazard_score": 0.35,
       "ghs_pictograms": ["GHS07"],
-      "signal_word": "Attention",
+      "signal_word": "Caution",
       "h_statements": ["H302","H312","H332"],
-      "notes": "Réactif de départ de la synthèse Smith 2016. Nocif par inhalation et contact. Moins dangereux que la plupart des réactifs organiques."
+      "notes": "Toxic by inhalation and contact."
     },
     {
-      "name": "Naphtalène",
+      "name": "Naphtalene",
       "smiles": "c1ccc2ccccc2c1",
       "cas": "91-20-3",
       "hazard_score": 0.45,
       "ghs_pictograms": ["GHS02","GHS06","GHS08","GHS09"],
       "signal_word": "Danger",
       "h_statements": ["H228","H301","H311","H331","H351","H400","H410"],
-      "notes": "Réactif de départ synthèse Gates 1952. Cancérigène suspecté. Très toxique pour l'environnement aquatique."
+      "notes": "Starting material for Gates synthesis (1952). Suspected carcinogenic. Toxic for the environement."
     },
     {
-      "name": "Acide 2-acétoxybenzoïque (aspirine)",
+      "name": "2-acetoxybenzoic acid (aspirin)",
       "smiles": "CC(=O)Oc1ccccc1C(=O)O",
       "cas": "50-78-2",
       "hazard_score": 0.15,
       "ghs_pictograms": ["GHS07"],
       "signal_word": "Attention",
       "h_statements": ["H302","H317","H319"],
-      "notes": "Médicament AINS. Faiblement irritant. Score très bas."
+      "notes": "Common drug."
     },
     {
-      "name": "Chlorure d'acétyle (AcCl)",
+      "name": "Acetyl chloride (AcCl)",
       "smiles": "CC(=O)Cl",
       "cas": "75-36-5",
       "hazard_score": 0.65,
       "ghs_pictograms": ["GHS02","GHS05"],
       "signal_word": "Danger",
       "h_statements": ["H225","H302","H314","H331","H332"],
-      "notes": "Réactif d'acylation très réactif. Corrosif. Réagit violemment avec l'eau en dégageant HCl."
+      "notes": "Very reactive acylation reagent. Corrosive. Violently reacts with water and produces HCl."
     },
     {
-      "name": "Anhydride acétique",
+      "name": "Acetic anhydride",
       "smiles": "CC(=O)OC(C)=O",
       "cas": "108-24-7",
       "hazard_score": 0.40,
       "ghs_pictograms": ["GHS02","GHS05","GHS07"],
       "signal_word": "Danger",
       "h_statements": ["H226","H302","H314","H332"],
-      "notes": "Agent d'acétylation. Corrosif. Réagit avec l'eau. Moins dangereux que AcCl."
+      "notes": "Acetylation agent. Corrosive. Reacts with water."
     },
     {
-      "name": "Chlorure de méthylène-triphenylphosphonium (sel de Wittig)",
-      "smiles": "ClC[P+](c1ccccc1)(c1ccccc1)c1ccccc1",
+      "name": "methylene-triphenylphosphonium chloride (Wittig's salt)",
+      "smiles": "[Cl-].[P+](C)(c1ccccc1)(c2ccccc2)c3ccccc3",
       "cas": "1779-58-4",
       "hazard_score": 0.30,
       "ghs_pictograms": ["GHS07"],
@@ -619,14 +619,14 @@
       "notes": "Réactif de Wittig. Nocif par toutes voies. Manipulation avec EPI standard."
     },
     {
-      "name": "Solvant aucun (neat)",
+      "name": "No solvent(neat)",
       "smiles": "",
       "cas": "",
       "hazard_score": 0.00,
       "ghs_pictograms": [],
-      "signal_word": "Aucun",
+      "signal_word": "None",
       "h_statements": [],
-      "notes": "Réaction sans solvant (neat). Idéal selon les principes de chimie verte."
+      "notes": "Ideal situation for green chemistry."
     }
   ]
 }
